@@ -1,0 +1,30 @@
+.about-page {
+  width: 100%;
+  min-height: auto;
+}
+
+.about-page h1 {
+  margin: 0 0 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1440px) and (max-width: 1919px){
+  .about-page h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px){
+  .about-page h1 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px){
+  .about-page h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 19px;
+  }
+}

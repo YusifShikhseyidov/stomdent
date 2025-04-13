@@ -1,0 +1,202 @@
+:root{
+  --career-page-main-color: #01579b;
+  --carerr-page-text-secondary-color: #fff;
+}
+
+/* header section styling */
+.careers-layout-header {
+  padding: 4rem 3rem 3rem;
+  height: 15rem;
+  text-align: center;
+}
+
+.careers-layout-header h1{
+  text-decoration: underline 10px var(--career-page-main-color);
+}
+
+.careers-layout-header p{
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* main section styling */
+.careers-layout-main{
+  background-image: url("/repeating-triangles.svg");
+}
+
+.careers-layout-main .no-vacancy-post{
+  height: auto; 
+  min-height: 62.7vh; 
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.svg-background-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 1rem;
+  height: auto;
+  min-height: 49dvh;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.svg-background {
+  background-image: url("/JobHunt.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  mix-blend-mode: multiply;
+}
+
+.svg-background-container div{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  border: 2px solid #e9e9e9;
+  background-color: var(--career-page-main-color);
+  color: var(--carerr-page-text-secondary-color);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.svg-background-container div:hover{
+  box-shadow: inset 0px 0px 53px 22px rgba(179, 179, 179, 0.3);
+}
+
+.svg-background-container p::selection{
+  background-color: var(--carerr-page-text-secondary-color);
+  color: var(--career-page-main-color);
+}
+
+.svg-background-container p:first-child{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 3;
+}
+
+.svg-background-container p:nth-child(2){
+  font-size: 15px;
+}
+
+.svg-background-container .sendCVBtn{
+  background-color: transparent;
+  min-width: fit-content;
+  max-width: fit-content;
+  padding: 0.625rem;
+  border: 1px solid #fff;
+}
+
+/* ****************************screen sizes styles************************ */
+@media (min-width: 1921px){
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 68.6vh; 
+  }
+
+  .svg-background{
+    height: 640px;
+  }
+}
+
+@media (max-width: 768px){
+  .svg-background-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1360px){
+  .careers-layout-header h1{
+    font-size: 21px;
+  }
+  .svg-background{
+    height: 290px;
+  }
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 48.7vh; 
+  }
+}
+
+@media (min-width: 1361px) and (max-width: 1366px){
+  .careers-layout-header h1{
+    font-size: 21px;
+  }
+  .svg-background{
+    height: 270px;
+  }
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 47.9vh; 
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1400px){
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 63.9vh; 
+  }
+  .svg-background{
+    height: 430px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px){
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 56.5vh; 
+  }
+
+  .svg-background{
+    height: 385px;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1680px){
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 63.6vh; 
+  }
+  .svg-background{
+    height: 475px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1152px){
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 55.1vh; 
+  }
+  .svg-background{
+    height: 380px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px){
+  .careers-layout-header h1{
+    font-size: 23px;
+  }
+
+  .careers-layout-header {
+    padding: 2rem 3rem 1rem;
+    height: 11rem;
+    text-align: center;
+  }
+
+  .careers-layout-main .no-vacancy-post{
+    height: auto; 
+    min-height: 56.1vh; 
+  }
+
+  .svg-background{
+    height: 320px;
+  }
+}

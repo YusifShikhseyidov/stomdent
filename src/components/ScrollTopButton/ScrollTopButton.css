@@ -1,0 +1,29 @@
+.scrollup-container{
+  width: 60px;
+  height: 55px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 100px;
+  background-color: #01579b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 13px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.scrollup-container > svg{
+  font-size: 2.3rem;
+}
+
+.scrollup-container.show{
+  opacity: 1;
+  visibility: visible;
+}

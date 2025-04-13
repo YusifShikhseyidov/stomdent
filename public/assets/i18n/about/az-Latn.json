@@ -1,0 +1,12 @@
+{
+  "aboutpagetitle": "Haqqımızda",
+  "philosophy1": "Hədsİz Mükəmməllİk",
+  "philosophy2": "Bizim İş Fəlsəfəmizdir",
+  "maindirectionsofwork": "Əsas Fəaliyyət İstiqamətləri",
+  "mainservices": ["Tikinti", "Əsaslı Təmir", "Tarixi Abidələrin Bərpası"],
+  "sifariscilerpagetitle": "Sİfarİşçİlər",
+  "ourvaluepagetitle": "Niyə Məhz Biz?",
+  "ourvalues": ["Sifarişçilərlə uğurlu əməkdaşlıq", "Sənayedə {{years}} illik təcrübə", "Korporativ idarəçilik", "Yenidənqurma və bərpa sahələrində təcrübə"],
+  "certificates": "Sertifikatlar",
+  "licences": "Lisenziyalar"
+}

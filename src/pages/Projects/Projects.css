@@ -1,0 +1,68 @@
+/* Finished projects page layout styles */
+.projects-page_header{
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.projects-page_header .main-heading {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.projects-page_main-content {
+  padding: 4rem 0;
+  color: #fff;
+  width: 100%;
+  /* Used this overflow property here to prevent the page to be scrollable for a few secs on x axis on load since I use react-awesome-reveal Fade component */
+  overflow: hidden;
+}
+
+/* ************loading screen amination********************* */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #01579b;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #01579b;
+  width: 6px;
+  height: 6px;
+  transform: translate(150%, 150%);
+  border-radius: 50%;
+}
+.loader::before {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  transform: translate(-150%, -150%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+@media (min-width: 1281px) and (max-width: 1366px){
+  .projects-page_header .main-heading{
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,110 @@
+.licences-section{
+  width: 100%;
+}
+
+.licences-section h2{
+  margin: 2rem 0 5rem;
+  text-align: center;
+  animation: appearFromNothingness 0.5s ease;
+}
+
+.licences-section .licences-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.licences-section .licence-container{
+  width: 23%;
+  height: 610px;
+}
+
+.licences-section .licence-container img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  transition: 0.5s;
+}
+
+.licences-section .licence-container:hover img{
+  transform: scale(1.05);
+}
+
+@keyframes appearFromNothingness{
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* *****************************different screen sizes styles***************************** */
+@media (min-width: 1367px) and (max-width: 1600px){
+  .licences-section .licences-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+  }
+
+  .licences-section .licence-container{
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px){
+  .licences-section h2{
+    margin-bottom: 2rem;
+  }
+
+  .licences-section .licences-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
+  }
+
+  .licences-section .licence-container{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px){
+  .licences-section {
+    margin-bottom: 2rem;
+  }
+
+  .licences-section h2{
+    font-size: xx-large;
+    margin-bottom: 2rem;
+  }
+
+  .licences-section .licences-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 2rem;
+    margin: 0 auto;
+  }
+
+  .licences-section .licence-container{
+    width: 90%;
+  }
+}
+
+@media (max-width: 645px){
+  .licences-section .licences-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    place-items: center;
+    row-gap: 2rem;
+    margin: 0 auto;
+  }
+}

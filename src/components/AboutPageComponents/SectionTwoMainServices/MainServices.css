@@ -1,0 +1,141 @@
+:root{
+  --about-page-primary-color: #01579b;
+}
+
+.about-page_section-2{
+  width: 100%;
+  height: fit-content;
+}
+
+.about-page_section-2 h2{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-page_section-2 .about-page_main-services {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-page_section-2 .about-page_main-services .service-container {
+  width: 11rem;
+  height: 16rem;
+}
+
+.service-container .service-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.service-container .service-logo-container img {
+  width: 70%;
+  height: 70%;
+  transition: all 0.4s;
+}
+
+.service-container:hover .service-logo-container img {
+  transform: scale(1.1);
+}
+
+.service-container .service-name-container {
+  color: #fff;
+  background-color: var(--about-page-primary-color);
+  height: 50%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  font-size: 17px;
+  text-align: center;
+}
+
+.service-container .service-name-container h3 {
+  cursor: default;
+}
+
+/* *************************** screen sizes styles ***************************** */
+@media (min-width: 1921px){
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 13rem;
+    height: 17rem;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1919px){
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 12rem;
+    height: 16rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px){
+  .about-page_section-2 h2{
+    font-size: 20px;
+  }
+
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 10rem;
+    height: 13rem;
+  }
+
+  .service-container .service-name-container {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1440px){
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .about-page_section-2 h2{
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .service-container .service-name-container {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px){
+  .about-page_section-2 h2{
+    font-size: 18px;
+  }
+
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 11rem;
+    height: 9rem;
+  }
+
+  .service-container .service-name-container {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  .service-container .service-logo-container img {
+    width: 52%;
+    height: 75%;
+  }
+}
+
+@media (max-width: 680px){
+  .about-page_section-2 .about-page_main-services {
+    flex-direction: column;
+  }
+
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 22rem;
+    height: 25rem;
+  }
+
+  .service-container .service-name-container {
+    font-size: 25px;
+  }
+}

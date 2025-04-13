@@ -1,0 +1,145 @@
+.main-marquee-container{
+  width: 100%;
+  margin: 0 auto;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.marquee-title{
+  text-align: center;
+  margin: 8rem auto 2rem;
+}
+
+.marquee-container{
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-images{
+  height: 20rem;
+}
+
+.marquee-container img{
+  width: 80%;
+  height: 90%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+/* *************** loading screen amination***************************************** */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #01579b;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #01579b;
+  width: 6px;
+  height: 6px;
+  transform: translate(150%, 150%);
+  border-radius: 50%;
+}
+.loader::before {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  transform: translate(-150%, -150%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+/* ****************************styles for screen sizes********************************* */
+@media (max-width: 768px){
+  .main-marquee-container{
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main-marquee-container .marquee-container .logos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .main-marquee-container,
+  .marquee-container{
+    height: fit-content;
+  }
+
+  .logos-container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .marquee-images{
+    width: 60%;
+    height: 19rem;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px){
+  .about-page .marquee-title{
+    transform: translateY(7rem);
+  }
+
+  .marquee-container img{
+    width: 70%;
+    height: 80%;
+  }
+
+  .marquee-images{
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1153px) and (max-width: 1280px){
+  .about-page .marquee-title{
+    transform: translateY(6rem);
+  }
+
+  .marquee-container img{
+    width: 80%;
+    height: 90%;
+  }
+
+  .marquee-images{
+    height: 15rem;
+  }
+}
+
+@media (max-width: 1152px){
+  .about-page .marquee-title{
+    transform: translateY(6rem);
+  }
+  .marquee-images{
+    height: 14rem;
+  }
+}

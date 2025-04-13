@@ -1,0 +1,56 @@
+{
+  "navlinks": [
+    {
+      "title": "ƏSAS SƏHİFƏ",
+      "url": "/"
+    },
+    {
+      "title": "HAQQIMIZDA",
+      "url": "about",
+      "subLinks": [
+        {
+          "title": "HAQQIMIZDA",
+          "url": "about/about-us"
+        },
+        {
+          "title": "SİFARİŞÇİLƏR",
+          "url": "about/sponsors"
+        },
+        {
+          "title": "NİYƏ BİZ",
+          "url": "about/why-us"
+        },
+        {
+          "title": "SERTİFİKATLAR",
+          "url": "about/certificates"
+        },
+        {
+          "title": "LİSENZİYALAR",
+          "url": "about/licences"
+        }
+      ]
+    },
+    {
+      "title": "LAYİHƏLƏR",
+      "url": "projects",
+      "subLinks": [
+        {
+          "title": "TƏHVİL VERİLMİŞ LAYİHƏLƏR",
+          "url": "projects/finished-projects"
+        },
+        {
+          "title": "DAVAM EDƏN LAYİHƏLƏR",
+          "url": "projects/ongoing-projects"
+        },
+        {
+          "title": "BƏRPA LAYİHƏLƏRİ",
+          "url": "projects/restoration-projects"
+        }
+      ]
+    },
+    {
+      "title": "ƏLAQƏ",
+      "url": "contact"
+    }
+  ]
+}

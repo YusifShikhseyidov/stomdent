@@ -1,0 +1,249 @@
+:root {
+  --contact-page-primary-color: #01579b;
+}
+
+.contact-page h1 {
+  text-align: center;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin: 2rem auto 0;
+}
+
+.contact-details_contact-details-wrapper{
+  display: flex;
+  gap: 3rem;
+}
+
+.contact-details .contact-details_contact-us-svg{
+  width: 48%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details .contact-details_contact-us-svg img{
+  width: 100%;
+  height: 100%;
+}
+
+.contact-phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-phone-container a {
+  display: grid;
+  grid-template-rows: 1fr 0.7fr 1fr;
+  gap: 0.5rem;
+}
+
+.contact-phone-container a .phone-icon-wrapper {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.phone-icon-wrapper svg {
+  fill: var(--contact-page-primary-color);
+  width: 100px;
+  height: 100px;
+}
+
+.contact-email-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-email-container a {
+  display: grid;
+  grid-template-rows: 1fr 0.7fr 1fr;
+  gap: 0.5rem;
+}
+
+.contact-email-container a .email-icon-wrapper {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.email-icon-wrapper svg {
+  stroke: var(--contact-page-primary-color);
+  width: 100px;
+  height: 100px;
+}
+
+.contact-phone-container a span,
+.contact-email-container a span {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* ****************************styles for screen sizes**************************** */
+@media (min-width: 2256px){
+  .contact-details .contact-details_contact-us-svg{
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 1921px){
+  .contact-details .contact-details_contact-us-svg{
+    width: 55%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px){
+  .contact-page h1 {
+    font-size: 26px;
+  }
+
+  .contact-details .contact-details_contact-us-svg{
+    width: 42%;
+  }
+  
+  .phone-icon-wrapper svg,
+  .email-icon-wrapper svg {
+    width: 68px;
+    height: 68px;
+  }
+
+  .contact-phone-container a span,
+  .contact-email-container a span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px){
+  .contact-details .contact-details_contact-us-svg{
+    width: 45%;
+  }
+
+  .contact-page h1 {
+    font-size: 24px;
+  }
+
+  .phone-icon-wrapper svg,
+  .email-icon-wrapper svg {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px){
+  .contact-details .contact-details_contact-us-svg{
+    width: 38%;
+  }
+
+  .contact-page h1 {
+    font-size: 21px;
+    margin-top: 1.3rem;
+  }
+
+  .phone-icon-wrapper svg,
+  .email-icon-wrapper svg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-phone-container a span,
+  .contact-email-container a span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact-page h1 {
+    font-size: clamp(22px, 24px, 26px);
+    margin-top: 1rem;
+  }
+
+  .contact-details .contact-details_contact-us-svg{
+    width: 36%;
+  }
+
+  .phone-icon-wrapper svg,
+  .email-icon-wrapper svg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-phone-container a span,
+  .contact-email-container a span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1440px) {
+  .contact-details {
+    width: 90%;
+    margin: 0 auto 0;
+    gap: 0;
+  }
+
+  .contact-phone-container a,
+  .contact-email-container a{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-details {
+    width: 85%;
+    margin: 0 auto 0;
+    gap: 0;
+  }
+
+  .contact-details_contact-details-wrapper{
+    margin-top: -4rem;
+  }
+
+  .contact-phone-container a,
+  .contact-email-container a{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px){
+  .contact-details_contact-details-wrapper{
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .contact-details .contact-details_contact-us-svg{
+    width: 85%;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-details {
+    width: 90%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact-details .contact-details_contact-us-svg{
+    width: 100%;
+  }
+
+  .contact-details_contact-details-wrapper{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "navlinks": [
+    {
+      "title": "ГЛАВНАЯ СТРАНИЦА",
+      "url": "/"
+    },
+    {
+      "title": "О НАС",
+      "url": "about",
+      "subLinks": [
+        {
+          "title": "О НАС",
+          "url": "about/about-us"
+        },
+        {
+          "title": "СПОНСОРЫ",
+          "url": "about/sponsors"
+        },
+        {
+          "title": "ПОЧЕМУ МЫ",
+          "url": "about/why-us"
+        },
+        {
+          "title": "СЕРТИФИКАТЫ",
+          "url": "about/certificates"
+        },
+        {
+          "title": "ЛИЦЕНЗИИ",
+          "url": "about/licences"
+        }
+      ]
+    },
+    {
+      "title": "ПРОЕКТЫ",
+      "url": "projects",
+      "subLinks": [
+        {
+          "title": "ЗАВЕРШЁННЫЕ ПРОЕКТЫ",
+          "url": "projects/finished-projects"
+        },
+        {
+          "title": "ОСУЩЕСТВЛЯЕМЫЕ ПРОЕКТЫ",
+          "url": "projects/ongoing-projects"
+        },
+        {
+          "title": "РЕСТАВРАЦИОННЫЕ ПРОЕКТЫ",
+          "url": "projects/restoration-projects"
+        }
+      ]
+    },
+    {
+      "title": "КОНТАКТ",
+      "url": "contact"
+    }
+  ]
+}
